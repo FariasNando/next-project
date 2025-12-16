@@ -1,5 +1,11 @@
 import { getAula } from "@/api/cursos";
-import Voltar from "@/components/Voltar";
+
+const metadata = {
+    title: "Detalhes da Aula",
+    description: "Informações detalhadas sobre a aula selecionada",
+};
+
+export { metadata };
 
 type Params = { params: { curso: string, aula: string } };
 

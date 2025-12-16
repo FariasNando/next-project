@@ -1,6 +1,13 @@
 import getCursos from "@/api/cursos";
 import Link from "next/link";
 
+const metadata = {
+    title: "Cursos",
+    description: "Lista de cursos disponíveis",
+};
+
+export { metadata };
+
 export default async function PageCursos() {
     const cursos = await getCursos();
      

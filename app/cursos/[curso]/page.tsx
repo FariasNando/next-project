@@ -3,6 +3,13 @@ import Link from "next/link";
 
 type Params = { params: { curso: string } };
 
+const metadata = {
+    title: "Detalhes do Curso",
+    description: "Informações detalhadas sobre o curso selecionado",
+};
+
+export { metadata };
+
 export default async function CursoPage({ params }: Params) {
     const { curso } = await params;
     const cursoData = await getCurso(curso);
