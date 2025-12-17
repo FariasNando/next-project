@@ -10,7 +10,7 @@ export { metadata };
 type Params = { params: { curso: string, aula: string } };
 
 export default async function AulaPage({ params }: Params) {
-    const { curso, aula } = params;
+    const { curso, aula } = await params;
     const aulaData = await getAula(curso, aula);
 
     return (

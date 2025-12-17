@@ -19,7 +19,7 @@ export default function Voltar() {
     <button
       type="button"
       onClick={handleVoltar}
-      className="px-4 ml-4 mt-4 py-2 rounded bg-zinc-200 dark:bg-zinc-700 hover:bg-zinc-300 dark:hover:bg-zinc-600 text-black dark:text-white font-medium mt-4 cursor-pointer"
+      className="px-4 ml-4 py-2 rounded bg-zinc-200 dark:bg-zinc-700 hover:bg-zinc-300 dark:hover:bg-zinc-600 text-black dark:text-white font-medium mt-4 cursor-pointer"
     >
       Voltar
     </button>
