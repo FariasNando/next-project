@@ -11,7 +11,7 @@ const metadata = {
 export { metadata };
 
 export default async function CursoPage({ params }: Params) {
-    const { curso } = params;
+    const { curso } = await params;
     const cursoData = await getCurso(curso);
     return (
         <div className="flex mt-4 ml-4 bg-zinc-50 font-sans dark:bg-black flex-col">
